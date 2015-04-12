@@ -26,7 +26,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
+    <div class="container-fluid">
 
       <h1 class="page-header header-text text-center">Roll The Dice</h1>
 
@@ -34,7 +34,26 @@
         <div class="col-md-8 col-sm-12 col-md-offset-2">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title text-center">Step 1: Enter Current Address</h3>
+              <h3 class="panel-title text-center">Connect With Uber
+                <span class="uber-check glyphicon glyphicon-ok"></span>
+              </h3>
+            </div>
+            <div class="panel-body uber-panel-body">
+              <div class="uber-button">
+                <img class="uber-button-img" src="/images/UBER_API_Badges_2x_78px.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row steps">
+        <div class="col-md-8 col-sm-12 col-md-offset-2">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">Enter Current Address
+                <span class="address-check glyphicon glyphicon-ok"></span>
+              </h3>
             </div>
             <div class="panel-body">
               <input class="current-address form-control"/>
@@ -47,16 +66,30 @@
         <div class="col-md-8 col-sm-12 col-md-offset-2">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title text-center">Step 2: Connect With Uber</h3>
+              <h3 class="panel-title text-center">Eat or Drink?
+                <span class="eat-drink-check glyphicon glyphicon-ok"></span>
+              </h3>
             </div>
             <div class="panel-body">
-              <div class="uber-button">
-                <img src="/images/UBER_API_Badges_2x_78px.png">
+              <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                <div class="btn-group btn-group-lg" role="group">
+                  <button type="button" class="btn btn-default">Eat</button>
+                </div>
+                <div class="btn-group btn-group-lg" role="group">
+                  <button type="button" class="btn btn-default">Drink</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="row steps">
+        <div class="col-md-8 col-sm-12 col-md-offset-2">
+          <button type="button" data-loading-text="Requesting..." class="roll-button btn btn-default btn-lg center-block">Roll The Dice</button>
+        </div>
+      </div>
+
 
     </div>
 

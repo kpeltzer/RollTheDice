@@ -30,6 +30,10 @@ body {
   margin-top: 3em;
 }
 
+.uber-panel-body {
+  display: none;
+}
+
 .uber-button {
   border-radius: 3px 10px;
 
@@ -37,6 +41,24 @@ body {
     cursor: pointer;
     display: block;
     margin: 0px auto;
+  }
+}
+
+.panel-title {
+  font-size: 24px;
+}
+
+.uber-check {
+  display: none;
+  color: green;
+}
+
+.roll-button {
+  font-family: 'Pacifico', cursive;
+  font-size: 26px;
+
+  &.disabled {
+    font-family: $font-family-sans-serif;
   }
 }
 
