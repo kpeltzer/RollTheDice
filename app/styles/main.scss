@@ -41,14 +41,26 @@ body {
     cursor: pointer;
     display: block;
     margin: 0px auto;
+    height: 100px;
+    width: auto;
+
+    &:hover {
+      opacity: 0.9;
+      transition: 0.1s linear;
+    }
   }
+}
+
+.address-text {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .panel-title {
   font-size: 24px;
 }
 
-.uber-check {
+.check {
   display: none;
   color: green;
 }
@@ -56,6 +68,7 @@ body {
 .roll-button {
   font-family: 'Pacifico', cursive;
   font-size: 26px;
+  display: none;
 
   &.disabled {
     font-family: $font-family-sans-serif;
